@@ -52,7 +52,7 @@ export const SurveyProvider = ({ children }: SurveyProviderProps) => {
   };
 
   const deleteEvaluation = (id: string) => {
-    setEvaluations(evaluations.filter(eval => eval.id !== id));
+    setEvaluations(evaluations.filter(evaluation => evaluation.id !== id));
     
     toast({
       title: "Evaluation Deleted",
